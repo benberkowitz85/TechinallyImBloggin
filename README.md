@@ -1,5 +1,12 @@
 # TechinallyImBloggin
 
+Description 
+
+Technology is an constant and rapidly evolving entity. Keep upto date and informed with my tech blog! 
+
+
+Demo
+
 User Story
 AS A developer who writes about tech
 I WANT a CMS-style blog site
@@ -38,3 +45,8 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update,
+
+Acknowledgements 
+
+As always thank you to Kai, Karl, my group mates, youtube walk throughs, and the almighty google.
+
