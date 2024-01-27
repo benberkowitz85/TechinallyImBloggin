@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{{title}}}</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/jass.css">
+
+</head>
+
+<body >
+
+  <header class="banner">
+    <a href="/">
+      <h1>The Tech Blog</h1>
+    </a>
+    <!-- Conditionally render login or logout links -->
+    {{#if logged_in}}
+    <a href="/">
+      <button class="btn btn-primary" id="home">home</button>
+    </a>
+    <a href="/blog">
+      <button class="btn btn-primary" id="blog">dashboard</button>
+    </a>
+    <button class="btn btn-primary" id="logout">logout</button>
+
+    {{else}}
+    {{!-- //if not logged in --> --}}
+    <a href="/">
+      <button class="btn btn-primary" id="home">home</button>
+    </a>
+
+    <a href="/login">
+      <button class="btn btn-primary" id="blog">dashboard</button>
+    </a>
+    <a href="/login">
+      <button class="btn btn-primary" id="login">login</button>
+    </a>
+    {{/if}}
+  </header>
+  <main class="container container-fluid mt-5">
+    <!-- Render the sub layout -->
+    {{{ body }}}
+  </main>
+  <footer>
+
+  </footer>
+  </div> 
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+</body>
+
+</html>
